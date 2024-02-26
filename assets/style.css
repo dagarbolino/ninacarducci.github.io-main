@@ -42,6 +42,7 @@ body {
 
 .social-link img {
 	width: 20px;
+
 }
 
 #about {
@@ -71,7 +72,8 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: 100%;
+	object-fit: cover;
 }
 
 #about-me {
@@ -119,7 +121,7 @@ body {
 
 .item-column {
 	position: relative;
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 	padding: 0;
 }
 
@@ -130,13 +132,55 @@ body {
 
 }
 
-.gallery-item {
+
+.gallery-item.img-fluid {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+
 }
+
+.container__back {
+	background-color: #595927;
+	border: none;
+	position: fixed;
+	bottom: 0;
+	right: 5px;
+	z-index: 1000;
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+
+	button {
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		font-size: 24px;
+		width: 60px;
+		height: 30px;
+
+	}
+
+
+	a {
+		color: #000;
+		text-decoration: none;
+		transform: rotate(90deg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 900;
+
+	}
+
+	a:hover {
+		color: #fff;
+	}
+}
+
+
 
 .mg-prev,
 .mg-next {
