@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	max-width: 1920px;
 }
 
 * {
@@ -48,9 +49,16 @@ body {
 	color: #000
 }
 
+.carousel-item {
+	height:100%;
+	
+	margin: 0;
+	padding: 0;
+}
+
 .social-link img {
 	width: 20px;
-
+	height: 20px;
 }
 
 #about {
@@ -138,6 +146,12 @@ body {
 	display: block;
 	padding-bottom: 100%;
 
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
 }
 
 
